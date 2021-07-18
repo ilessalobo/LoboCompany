@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobo Company</title>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/img/wolf-emblem.png" class="mx-3" width="60px" alt="" style="filter: invert(100%);">
+              Lobo Company
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item l-link">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mais Vendidos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#headset1">HeadSets P1</a></li>
+                  <li><a class="dropdown-item" href="#headset2">HeadSets P2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#headset3">HeadSets USB</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-transparent text-light border-info" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="button-pesquisar">
+                    <button class="btn btn-outline-info text-light" type="reset" id="button-pesquisar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </nav>     
+      <div class="container-fluid">
+
+        <div class="row text-light" style="min-height: 100vh; background-color: rgb(0, 0, 0); padding: 50px 0px; background-image: url(./assets/img/wpp.png); background-size: cover; background-size: 100% 100%;">
+            <div class="col-sm-12 col-md-6 offset-md-1">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10">
+                        <img class="img-fluid" src="./imagensHeadSets/headsets.png" alt="">
+                    </div>
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="mt-2">Na Lobo Company você encontra os melhores Headsets e as melhores promoções!</h1>
+                        <br>
+                        <p>
+                            A <strong>Lobo Company</strong> foi fundada em 2002, é uma das empresas pioneiras no comércio de Headsets 
+                            e hoje é uma das maiores e-commerce do segmento de tecnologia na América Latina. Desde sua criação, 
+                            a empresa é formada por histórias e conquistas de um time obcecado por agilidade, qualidade de atendimento, 
+                            velocidade de entrega e respeito pelo consumidor. Com preços imbatíveis em seu catálogo, a Lobo Company está 
+                            sempre à frente e traz em primeira mão os melhores lançamentos do mercado mundial. 
+                            Cadastre-se e receba descontos especiais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-5 d-flex justify-content-center align-items-center"> 
+                <div class="dvForm">
+                    <h4>Cadastre seu e-mail e receba novidades, descontos e promoções!</h4>
+                    <br>
+                    <form action="" method="post" id="formularioCadastro" name="formCadastro">
+                        <div class="mb-2">
+        
+                            <input class="form-control-sm bg-transparent text-light w-100" name="nome" type="text" id="name" placeholder="Nome" required/>
+                        </div>
+                        <div class="mb-3">
+        
+                            <input class="form-control-sm bg-transparent text-light w-100" name="email" type="email" id="mail" placeholder="E-mail" required/>
+                        </div>
+        
+                        <div class="button">
+                            <button class="btn btn-outline-info w-100" type="submit">Quero me cadastrar</button>
+                        </div>
+                    </form>
+                    <div id="msg"></div>
+                </div> 
+            </div>
+        </div>
+        <div class="row gif text-light" style="background-image: url(./assets/img/back.gif);" id="headset1">
+            <div class="col-sm-12 col-md-3">
+                <img class="img-fluid" src="./imagensHeadSets/Image2.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <h1>Headset JBL White Angle T450BT</h1>
+                <br>
+                <p>
+                    Apresentamos os fones de ouvido supra-auriculares <strong>JBL T450BT.</strong>  Eles são dobráveis, 
+                    leves, confortáveis e compactos. No mesmo pacote há um par de drivers de 32 mm que reproduzem graves de verdade,
+                    reproduzindo o poderoso som JBL Pure Bass que você ouvi em locais muito maiores. Controles/microfone de música 
+                    e chamada são colocados nos fones. E porque a sua música deve ir a qualquer lugar com você, serão até 11 horas 
+                    de reprodução de áudio ininterrupto com uma única carga.
+                </p>
+            </div>
+        </div>
+        <div class="row text-light" style="background-image: url(./assets/img/gradient.jpg!d); background-size: 100% 100%;">
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column offset-md-2">
+                <h1>Headset Logitech 231</h1>
+                <br>
+                <p>
+                    Quer você jogue no PC ou no console, o <strong>G231</strong> resolve. Um par é tudo o que você precisa para 
+                    obter um excelente áudio para jogos, independentemente da sua escolha. Com drivers de neodímio de 40 mm, o G230 oferece 
+                    um som estéreo claro e nítido que dá vida ao jogo. Sessões de jogo de maratona significam calor e suor. Cobrimos as 
+                    almofadas de ouvido do G231 com tecido de alto desempenho cuidadosamente selecionado, para um confortável toque suave depois
+                    de horas de uso. E são facilmente removíveis para a lavagem e a manutenção do headset.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="img-fluid" src="./imagensHeadSets/Image3.png" alt="">
+            </div>
+        </div>
+
+        <div class="row gif text-light" style="background-image: url(./assets/img/back.gif);">
+            <div class="col-sm-12 col-md-4">
+                <img class="img-fluid" src="./imagensHeadSets/Image4.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <h1>Headset Logitech G635</h1>
+                <br>
+                <p>
+                    O<strong> G635</strong>, com o revolucionário sensor HERO e a tecnologia sem fio
+                    LIGHTSPEED, permite que jogue sem fios - sem limites. Aprimorado com a eficiência do sensor 
+                    10 vezes maior, este é um avanço na vida útil da bateria e o novo padrão em jogos sem fio.
+                    Experimente o incrível DTS® Headphone:X 2.0 que oferece precisão maior do que o canal de som 
+                    surround 7.1 padrão. Um reconhecimento espacial preciso no jogo permite que você detecte claramente
+                    a posição e a distância em uma paisagem sonora 3D completa. Ouvir o entorno pode ser a diferença
+                    entra a vitória e a derrota.
+                </p>
+            </div>
+        </div>
+        <div class="row text-light" style="background-image: url(./assets/img/gradient.jpg!d); background-size: 100% 100%;" id="headset2">
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column offset-md-2">
+                <h1>Headset Logitech Gpro</h1>
+                <br>
+                <p>
+                    O Headset Gamer <strong>Logitech G PRO</strong> foi projetado com e para profissionais 
+                    de e-sports. Feito para durar com armação em alumínio e arco de cabeça em aço. As almofadas de ouvido
+                    e cabeça de espuma memória macia e couro sintético mantêm você confortável durante sessões de 
+                    treinamento e maratonas de jogos. Os drivers Pro-G 50mm oferecem áudio incrivelmente preciso com 
+                    resposta de graves aprimorada. O DAC USB avançado possui um EQ integrado de cinco bandas que pode 
+                    ser programado através do software G HUB com configurações de seus profissionais de e-sports favoritos.
+                    O microfone é removível e afinado com pop filter e garante que suas comunicações sejam cristalinas. 
+                    Projetado para PC. Play to win.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="img-fluid" src="./imagensHeadSets/Image5.png" alt="">
+            </div>
+        </div>
+
+        <div class="row gif text-light" style="background-image: url(./assets/img/back.gif);">
+            <div class="col-sm-12 col-md-4">
+                <img class="img-fluid" src="./imagensHeadSets/Image6.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <h1>Headset Corsair HS50 PRO P2</h1>
+                <br>
+                <p>
+                    O Fone de ouvido para jogos <strong>CORSAIR HS50 PRO STEREO</strong> oferece conforto e qualidade 
+                    com fones de ouvido com espuma de memória, drivers de áudio de neodímio de 50 mm com ajuste personalizado e um 
+                    microfone unidirecional removível com cancelamento de ruído.
+                </p>
+            </div>
+        </div>
+        <div class="row text-light" style="background-image: url(./assets/img/gradient.jpg!d); background-size: 100% 100%;">
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column offset-md-2">
+                <h1>Headset Corsair Void RGB Elite</h1>
+                <br>
+                <p>
+                    <strong>Corsair Void RGB Elite</strong> possui som surround 7.1, com um leve passo a uma retumbante explosão, 
+                    graças aos drivers de áudio premium em neodímio de alta densidade de 50mm com ajuste personalizado que contam
+                    com um amplo intervalo de frequência de 20Hz-30.000Hz. Jogue com a liberdade proporcionada por um alcance de 
+                    até 12 metros sem fio e uma bateria com duração de até 16 horas.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <img class="img-fluid" src="./imagensHeadSets/Image7.png" alt="">
+            </div>
+        </div>
+
+        <div class="row gif text-light" style="background-image: url(./assets/img/back.gif);">
+            <div class="col-sm-12 col-md-3">
+                <img class="img-fluid" src="./imagensHeadSets/Image9.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <h1>Headset JBL Everest 310 Gun Metal</h1>
+                <br>
+                <p>
+                    Com o <strong>JBL Everest™ 310GA</strong> você experimentará até 20 horas de liberdade sem fios, 
+                    emoções surpreendentes, o legendário som JBL Pro Audio e o conforto ergonômico oferecido pelos acabamentos com 
+                    materiais premium e um encaixe perfeito. Obtenha ajuda do seu Google Assistant simplesmente tocando os sensores no
+                    fone. A tecnologia ShareMe 2.0 permite que você se conecte e compartilhe suas músicas com amigos via Bluetooth. 
+                    Sua recarga rápida de 2 horas, seu elegante design plano e dobrável e seu estojo rígido e compacto tornam esses fones 
+                    de ouvido o companheiro perfeito para o seu estilo de vida ocupado. 
+                </p>
+            </div>
+        </div>
+        <div class="row text-light py-5" style="background-image: url(./assets/img/gradient.jpg!d); background-size: 100% 100%;" id="headset3">
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column offset-md-2">
+                <h1>HeadSet HyperX Revolver USB</h1>
+                <br>
+                <p>
+                    Se você leva o jogo a sério, então precisa de um headset que proporcione a máxima vantagem 
+                    competitiva. A linha <strong>HyperX Cloud Revolver™</strong> foi projetada para atender as exigências dos gamers de PC ou de console. Drivers
+                    de última geração separam graves, médios e agudos para reproduzir sons de alta qualidade com posicionamento preciso. A família
+                    Revolver conta com modelos estéreo e surround sound 7.1, apresentando palco sonoro com qualidade de estúdio e drivers de última 
+                    geração que se destacam em configurações FPS e de ambiente aberto. Ambos headsets apresentam estrutura sólida e durável em aço e 
+                    espuma memory foam exclusiva HyperX, proporcionando conforto e confiabilidade. O Cloud Revolver é o headset certo para você que 
+                    está procurando conforto excepcional, qualidade de áudio e comunicação clara.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="img-fluid" src="./imagensHeadSets/Image10.png" alt="">
+            </div>
+        </div>
+      </div>
+      <footer>
+        <p class="p-2">
+            Horário de atendimento: 07:00 às 18:00 de segunda à sábado, horário de Brasília (exceto feriados).
+        </p>
+        <hr class="linhafina">
+        <p>
+            <strong>Endereço:</strong> Rua 1, 1515 - Centro - Cuiabá (MT) - CEP: 78035-000 |   Central SAC: 0800 1515 2020 |   E-mail: faleconosco@lobocompany.com.br
+        </p>
+        <small>Copyright &copy; 2021 Lobo Inc. Todos os direitos reservados.</small>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js">  </script>
+</body>
+</html>

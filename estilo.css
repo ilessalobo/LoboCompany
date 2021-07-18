@@ -1,0 +1,43 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	clear: both;
+}
+
+.gif {
+    background-position-y: bottom;
+    background-size: 110% 76%;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-position: right 35% bottom -70%;
+}
+
+
+.dvForm {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 35px 35px;
+    width: 80%;
+    border-radius: 7px;
+    box-shadow: 0px 0px 12px rgb(3, 56, 58);
+    text-align: center;
+
+}
+
+
+footer{
+	background-color: #222;
+	color: #ccc;
+	padding: 20px;
+	text-align: center;
+    position: relative;
+    font-size: 13px;
+}
+
+
+.linhafina {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(143, 147, 149), transparent);
+}
+
